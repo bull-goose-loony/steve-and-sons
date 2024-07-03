@@ -36,6 +36,20 @@ const HomePage = () => {
       image: 'images/card2.webp',
       overlay_text: '',
       title: 'Card Title 2',
+      description: 'LLorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dol'
+    },
+    {
+      id: 5,
+      image: 'images/card2.webp',
+      overlay_text: '',
+      title: 'Card Title 2',
+      description: 'Description for card 2...'
+    },
+    {
+      id: 6,
+      image: 'images/card2.webp',
+      overlay_text: '',
+      title: 'Card Title 2',
       description: 'Description for card 2...'
     },
     // Add more cards as needed...

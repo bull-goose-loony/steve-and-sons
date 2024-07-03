@@ -2,10 +2,7 @@
 
 .contact-form {
   max-width: 1500px;
-
-  background-color: #fff;
   margin: 0 auto;
-  margin-top: 50px;
 }
 
 .contact-form-row {
@@ -56,4 +53,14 @@
 
 .submit-button:hover {
   background-color: #f9a825;
+}
+
+.success-message {
+  color: green;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
 }

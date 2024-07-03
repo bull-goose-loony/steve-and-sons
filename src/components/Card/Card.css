@@ -36,21 +36,7 @@
 
 .card p {
   flex: 1;
-  margin: 10px 0;
-}
-
-.card-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.card-button:hover {
-  background-color: #0056b3;
+  /* margin: 10px 0; */
 }
 
 /* Responsive grid layout */
@@ -58,7 +44,7 @@
   display: grid;
   gap: auto;
   justify-content: center; /* Center the cards within the container */
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media (min-width: 1024px) {

@@ -10,7 +10,7 @@ body, html {
 }
 
 body {
-    background-image: linear-gradient(to right, #B0F3F1, #FFCFDF); 
+    background-image: linear-gradient(to right, #B0F3F1, #FFFFDB); 
 }
 
 .main-content {
@@ -18,13 +18,14 @@ body {
 }
 
 .section {
-  background-color: rgba(255, 255, 255, 0.3); /* White with 90% opacity */
+  background-color: rgba(255, 255, 255, 0.5); /* White with 90% opacity */
   margin-top: 20px;
-  padding: 0px 20px;
+  margin-bottom: 10px;
 }
 
 .section h2 {
     font-size: 2.5rem;
+    margin-top: 10px;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -53,7 +54,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top: 10px;
+    padding-top: 20px;
     overflow: hidden;
 }
 
@@ -61,7 +62,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top: 10px;
+    padding-bottom: 20px;
     overflow: hidden;
     text-align: center;
 }
@@ -75,13 +76,13 @@ body {
 
 .services-section {
     text-align: center;    
+    padding-bottom: 20px;
 }
 
 /* src/components/Contact.css */
 .contact-section {
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.5); /* White with 90% opacity */
-  padding: 10px 20px 20px 20px;
+  /* margin-top: 20px; */
+  padding: 30px 30px 10px 30px;
   text-align: center;
 }
 
@@ -91,7 +92,6 @@ body {
 }
 
 .contact-section p {
-  margin-bottom: 30px;
   font-size: 1rem;
   color: #666;
 }
