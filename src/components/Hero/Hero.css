@@ -50,12 +50,12 @@
 @media (max-width: 768px) {
     .slide-image { height: 62vh; }
     .hero-overlay { max-width: 100%; }
-    .hero-overlay h2 { font-size: 1.5rem; }
+    .hero-overlay h2 { font-size: 0.8rem; }
     .hero-button { padding: 8px 16px; }
 }
 
 @media (max-width: 480px) {
-    .slide-image { height: 40vh; }
-    .hero-overlay h2 { font-size: 1.2rem; }
+    /* .slide-image { height: 62vh; } */
+    .hero-overlay h2 { font-size: 0.8rem; }
     .hero-button { padding: 6px 12px; }
 }
