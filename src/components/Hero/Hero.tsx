@@ -1,6 +1,7 @@
 // Hero.tsx
 import React from 'react';
 import Slider from 'react-slick';
+import './Hero.css'
 
 interface Slide {
   image: string;
