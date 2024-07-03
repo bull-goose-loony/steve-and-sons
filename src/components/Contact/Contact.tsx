@@ -25,7 +25,12 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_5sd2zvu', 'template_ib5pcxd', e.target as HTMLFormElement, 'ec_ld_p9ex7vyBP-F')
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID || '',
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '',
+      e.target as HTMLFormElement,
+      process.env.REACT_APP_EMAILJS_USER_ID || ''
+    )
       .then((result) => {
         console.log(result.text);
         setIsSubmitted(true);
