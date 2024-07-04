@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="about-image-container">
         <img src='images/steve-and-josh.webp' alt="steve-and-josh" className="about-image"/>
           <div className="about-overlay">
-            <h2>Family Business</h2>
+            <h2 className="about-overlay-heading">Family Business</h2>
             <p> family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah family blah blah </p>
           </div>
         </div>

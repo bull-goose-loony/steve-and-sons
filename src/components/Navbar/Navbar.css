@@ -1,14 +1,14 @@
-/* Navbar.css */
+/* src/components/Navbar.css */
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* light blue background-color: #68c7c5;  Match your color scheme */
   background-color: #161a1d;
-  padding: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-left {
@@ -16,105 +16,129 @@
   align-items: center;
 }
 
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
 
 .navbar-right {
   display: flex;
   align-items: center;
 }
 
-
-.navbar-center {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-
 .logo {
-  width: 100px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  padding-left: 15px
-}
-
-.title {
-  color: #fefdf1; /* Match your color scheme */
-  font-size: 1.2rem; /* Adjust font size */
-  margin-right: 20px; /* Adjust spacing between logo/title and nav links */
+  width: 100px;
+  height: auto;
+  padding-right: 15px;
 }
 
 .navbar-links {
   list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex; /* Ensure nav links are horizontally aligned */
 }
 
 .navbar-links li {
-  margin-right: 20px; /* Adjust spacing between links */
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  color: #fefdf1;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #68c7c5;
 }
 
 .phone-btn {
-  display: right;
-  background-color: #4a5960; /* Match your color scheme */
-  color: #fefdf1; /* Match your color scheme */
-  padding: 10px 20px; /* Adjust padding */
+  background-color: #4a5960;
+  color: #fefdf1;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.phone-btn:hover {
+  background-color: #68c7c5;
 }
 
 .hamburger-btn {
+  display: none;
   background-color: transparent;
-  color: #fefdf1; /* Match your color scheme */
+  color: #fefdf1;
   border: none;
-  font-size: 1.5rem; /* Adjust font size */
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
 /* Small screens */
 @media (max-width: 768px) {
-  .title {
-    display: None;
-  }
-  .logo {
-    display: flex;
-  }
-  .hamburger-menu {
-    display: flex;
-  }
-  .navbar-left {
-    display: flex;
-  }
-  .navbar-right {
-    display: flex
-  }
-  .navbar-links {
-    display: none; /* Hide title and nav links */
-  }
-  .phone-btn {
-    display: flex; /* Show phone button */
-    margin: 0 auto; /* Center the phone button */
-  }
-}
-
-/* Medium and Large screens */
-@media (min-width: 769px) {
-  .logo {
-    display: center;
-  }
-  .title {
-    display: flex;
-  }
-  .navbar-right,
-  .navbar-links {
-    display: navbar-center; /* Ensure title and nav links are horizontally aligned */
-  }
-  .phone-btn {
-    display: flex;
-    margin: 0 auto; /* Center the phone button */
-  }
   .navbar-center {
     display: none;
   }
+  .navbar-links {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+}
+
+/* MobileMenu.css */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #161a1d;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+  padding: 20px;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background-color: transparent;
+  color: #fefdf1;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: right;
+  width: 100%;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
+.mobile-menu-links li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu-links a {
+  color: #fefdf1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-links a:hover {
+  color: #68c7c5;
 }

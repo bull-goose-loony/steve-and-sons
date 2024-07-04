@@ -1,6 +1,6 @@
-// MobileMenu.tsx
+// src/components/MobileMenu.tsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import './MobileMenu.css';
 
 interface MobileMenuProps {
@@ -10,16 +10,13 @@ interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   return (
-    <div className={`mobile-menu-overlay ${isOpen ? 'open' : ''}`} onClick={onClose}>
-      <div className={`mobile-menu ${isOpen ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
-        <button className="close-btn" onClick={onClose}>×</button>
-        <ul className="mobile-menu-links">
-          <li><Link to="/" onClick={onClose}>Home</Link></li>
-          <li><Link to="/about" onClick={onClose}>About</Link></li>
-          <li><Link to="/contact" onClick={onClose}>Contact</Link></li>
-          {/* Add more nav links as needed */}
-        </ul>
-      </div>
+    <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
+      <button className="close-btn" onClick={onClose}>×</button>
+      <ul className="mobile-menu-links">
+        <li><ScrollLink to="about" smooth={true} duration={500} onClick={onClose}>About</ScrollLink></li>
+        <li><ScrollLink to="services" smooth={true} duration={500} onClick={onClose}>Services</ScrollLink></li>
+        <li><ScrollLink to="contact" smooth={true} duration={500} onClick={onClose}>Contact</ScrollLink></li>
+      </ul>
     </div>
   );
 };

@@ -1,6 +1,6 @@
-// NavBar.tsx
+// src/components/NavBar.tsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import MobileMenu from './MobileMenu';
 import './Navbar.css';
 
@@ -13,20 +13,21 @@ const NavBar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      {/* Navbar content */}
       <div className="navbar-left">
-        <Link to="/">
-          <img src='images/logo.png' alt="Logo" className="logo" /> {/* Use the logo image here */}
-        </Link>
+        <img src="images/logo.png" alt="Logo" className="logo" />
       </div>
-      {/*So, navbar center is just a region, hamburger-menu should gp*/}
       <div className="navbar-center">
-        <button className="hamburger-btn" onClick={toggleMenu}>☰</button>
-        <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-      </div> 
+        <ul className="navbar-links">
+          <li><Link to="about" spy={true} offset={50} smooth={true} duration={500}>About</Link></li>
+          <li><Link to="services" spy={true} offset={50} smooth={true} duration={500}>Services</Link></li>
+          <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+        </ul>
+      </div>
       <div className="navbar-right">
         <a href="tel:1234567890" className="phone-btn">Call Us</a>
+        <button className="hamburger-btn" onClick={toggleMenu}>☰</button>
       </div>
+      {isMenuOpen && <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />}
     </nav>
   );
 };

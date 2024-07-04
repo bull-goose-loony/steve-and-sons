@@ -1,98 +1,94 @@
 /* About.css */
 .about-image-container {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .about-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    background-position: right center;
-    object-position: 80% 70%;
-    overflow: hidden;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-position: right center;
+  object-position: 80% 70%;
+  overflow: hidden;
 }
 
 .about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.0));
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+/* Specific override for .about-overlay-heading */
+.about-section .about-overlay .about-overlay-heading {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: static;
+  display: block;
+}
+
+/* Remove the ::before pseudo-element for .about-overlay-heading */
+.about-section .about-overlay .about-overlay-heading::before {
+  content: none;
+}
+
+@media (max-width: 768px) {
+  .about-overlay {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 40%;
-    height: 100%;
+    width: 94%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     color: white;
     text-align: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.0));
     z-index: 1; /* Ensure overlay is above the image */
-}
-
-.about-image-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    position: top;
-    display: inline-block;
-}
-
-.about-image-container h2::before {
-
-}
-
-@media (max-width: 768px) {
-    /* .about-image { */
-    /*     width: 100%; */
-    /*     height: auto; */
-    /*     object-fit: cover; */
-    /*     background-position: right center; */
-    /* } */
-
-    .about-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 94%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        color: white;
-        text-align: center;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.0));
-        z-index: 1; /* Ensure overlay is above the image */
-    } 
+  } 
 }
 
 @media (max-width: 600px) {
-    .about-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        background-position: right center;
-    }
+  .about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-position: right center;
+  }
 
-    .about-image-container {
-      position: relative;
-      height: auto;
-      width: 100%;
-    }
+  .about-image-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
 
-    .about-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        color: white;
-        text-align: center;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.0));
-        z-index: 1; /* Ensure overlay is above the image */
-    }
+  .about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.0));
+    z-index: 1; /* Ensure overlay is above the image */
+  }
 
 }

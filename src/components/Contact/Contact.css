@@ -1,5 +1,8 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body {
+  font-family: 'Roboto', slab;
+}
 .contact-form {
   max-width: 1500px;
   margin: 0 auto;
@@ -42,13 +45,19 @@
 .submit-button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #fbc02d;
-  color: #fff;
+  background-color: #ffff00;
+  color: #000;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
+  font-weight: semi-bold;
+  font-family: 'Roboto', slab;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.submit-button label {
+  font-weight: bold;
 }
 
 .submit-button:hover {

@@ -49,8 +49,6 @@ const Contact: React.FC = () => {
   // service_5sd2zvu
   return (
     <div className="contact-section">
-      <h2>Get in touch</h2>
-      <p>Let's talk about your project</p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form-row">
           <div className="form-group">

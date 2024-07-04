@@ -1,20 +1,22 @@
 /* home.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', slab;
 }
 
 body {
-    background-image: linear-gradient(to right, #B0F3F1, #FFFFDB); 
+  background-image: linear-gradient(to right, #B0F3F1, #FFFFDB); 
 }
 
 .main-content {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .section {
@@ -24,59 +26,59 @@ body {
 }
 
 .section h2 {
-    font-size: 2.5rem;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 .section h2::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -10px;
-    width: 50px;
-    height: 5px;
-    background-color: #ff7e5f;
-    transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 300px;
+  height: 5px;
+  background-color: #ffff00;
+  transform: translateX(-50%);
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the cards in the container */
-    padding: 10px;
-    gap: 30px; /* Space between cards */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards in the container */
+  padding: 10px;
+  gap: 30px; /* Space between cards */
 }
 
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  overflow: hidden;
 }
 
 .about-section {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px;
-    overflow: hidden;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the cards in the container */
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards in the container */
+  padding: 10px;
 }
 
 .services-section {
-    text-align: center;    
-    padding-bottom: 20px;
+  text-align: center;    
+  padding-bottom: 20px;
 }
 
 /* src/components/Contact.css */
