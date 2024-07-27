@@ -18,9 +18,9 @@ const NavBar: React.FC = () => {
       </div>
       <div className="navbar-center">
         <ul className="navbar-links">
-          <li><Link to="about" spy={true} offset={50} smooth={true} duration={500}>About</Link></li>
-          <li><Link to="services" spy={true} offset={50} smooth={true} duration={500}>Services</Link></li>
-          <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+          <li><Link to="about" spy={true} smooth={true} duration={300} offset={-100} onClick={() => console.log('About clicked')}>About</Link></li>
+          <li><Link to="services" spy={true} smooth={true} duration={300} offset={-100} onClick={() => console.log('About clicked')}>Services</Link></li>
+          <li><Link to="contact" spy={true} smooth={true} duration={300} onClick={() => console.log('About clicked')}>Contact</Link></li>
         </ul>
       </div>
       <div className="navbar-right">
@@ -33,3 +33,4 @@ const NavBar: React.FC = () => {
 };
 
 export default NavBar;
+

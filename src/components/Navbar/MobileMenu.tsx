@@ -13,9 +13,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
     <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
       <button className="close-btn" onClick={onClose}>×</button>
       <ul className="mobile-menu-links">
-        <li><ScrollLink to="about" smooth={true} duration={500} onClick={onClose}>About</ScrollLink></li>
-        <li><ScrollLink to="services" smooth={true} duration={500} onClick={onClose}>Services</ScrollLink></li>
-        <li><ScrollLink to="contact" smooth={true} duration={500} onClick={onClose}>Contact</ScrollLink></li>
+        <li><ScrollLink to="about" spy={true} smooth={true} duration={300} offset={-100} onClick={onClose}>About</ScrollLink></li>
+        <li><ScrollLink to="services" spy={true} smooth={true} duration={300} offset={-100} onClick={onClose}>Services</ScrollLink></li>
+        <li><ScrollLink to="contact" spy={true} smooth={true} duration={300} offset={-100} onClick={onClose}>Contact</ScrollLink></li>
       </ul>
     </div>
   );

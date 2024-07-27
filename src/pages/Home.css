@@ -1,7 +1,10 @@
 /* home.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-body, html {
+html {
+  -webkit-text-size-adjust: 100%; /* Prevents automatic text size adjustments */
+}
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -12,7 +15,7 @@ body, html {
 }
 
 body {
-  background-image: linear-gradient(to right, #B0F3F1, #FFFFDB); 
+  background-image: url("/public/images/webb.png")
 }
 
 .main-content {
@@ -20,7 +23,7 @@ body {
 }
 
 .section {
-  background-color: rgba(255, 255, 255, 0.5); /* White with 90% opacity */
+  background-color: rgba(255, 255, 255, 0.8); /* White with 90% opacity */
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -46,10 +49,10 @@ body {
 
 .cards-container {
   display: flex;
+  gap: 30px; /* Space between cards */
   flex-wrap: wrap;
   justify-content: center; /* Center the cards in the container */
   padding: 10px;
-  gap: 30px; /* Space between cards */
 }
 
 .hero-section {
@@ -102,6 +105,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     overflow: hidden;
+    padding-top: 0px;
     height: 62vh;
   }
 
@@ -115,6 +119,7 @@ body {
 @Media (max-width: 600) {
   .hero-section {
     overflow: hidden;
+    padding-top: 0px;
     height: 62vh;
   }
 

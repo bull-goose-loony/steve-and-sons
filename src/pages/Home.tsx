@@ -4,10 +4,11 @@ import Hero from '../components/Hero/Hero';
 import Card from '../components/Card/Card';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
+import { Element } from 'react-scroll';
 import './Home.css';
 
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   // Sample data for cards, you can replace this with actual data
   const cardsData = [
     {
@@ -15,7 +16,7 @@ const HomePage = () => {
       image: 'images/card1.webp',
       overlay_text: '',
       title: 'Panel Work',
-      description: 'LLorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dol'
+      description: 'TODO: this is an example, Let me know what you want the "cards" below to advertise.'
     },
     {
       id: 2,
@@ -28,29 +29,29 @@ const HomePage = () => {
       id: 3,
       image: 'images/card2.webp',
       overlay_text: '',
-      title: 'Card Title 2',
-      description: 'Description for card 2...'
+      title: 'Card Title 3',
+      description: 'Description for card 3...'
     },
     {
       id: 4,
       image: 'images/card2.webp',
       overlay_text: '',
-      title: 'Card Title 2',
-      description: 'LLorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dolor lorem.Lorem aoseut aoeusi ipsum dol'
+      title: 'Card Title 4',
+      description: 'Description for card 4...'
     },
     {
       id: 5,
       image: 'images/card2.webp',
       overlay_text: '',
-      title: 'Card Title 2',
-      description: 'Description for card 2...'
+      title: 'Card Title 5',
+      description: 'Description for card 5...'
     },
     {
       id: 6,
       image: 'images/card2.webp',
       overlay_text: '',
-      title: 'Card Title 2',
-      description: 'Description for card 2...'
+      title: 'Card Title 6',
+      description: 'Description for card 6...'
     },
     // Add more cards as needed...
   ];
@@ -58,13 +59,15 @@ const HomePage = () => {
   return (
     <div className = "main-content">
      <Hero />
-    <div id="about" className="section about-section">
+    <Element name="about" className="section about-section">
+    <div className='about-section'>
       <h2>About Us</h2>
       <div className = "about-container">
         <About />
       </div>
-     </div>
-     <div id="services" className="section services-section">
+      </div>
+     </Element>
+     <Element name="services" className="section services-section">
       <h2>Our Services</h2>
       <div className="cards-container">
         {cardsData.map(card => (
@@ -77,12 +80,12 @@ const HomePage = () => {
           />
         ))}
       </div>
-     </div>
-     <div id="contact" className="section contact-section">
+     </Element>
+     <Element name="contact" className="section contact-section">
       <h2>Get in touch</h2>
       <p>Let's talk about your project</p>
         <Contact />
-     </div>
+     </Element>
 
     </div>
   );
