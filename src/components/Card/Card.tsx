@@ -5,7 +5,7 @@ interface CardProps {
   image: string;
   overlay_text: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 const Card: React.FC<CardProps> = ({ image, overlay_text, title, description }) => {

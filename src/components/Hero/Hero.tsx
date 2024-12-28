@@ -13,7 +13,6 @@ interface Slide {
 const Hero: React.FC = () => {
   const slides: Slide[] = [
     {
-        // This image isn't looking at the lights
       image: '/images/slideshow/slideshow1.webp',
       text: 'Affordable electrician near Denver, Colorado',
       buttonText: 'How can we help?',
@@ -45,14 +44,24 @@ const Hero: React.FC = () => {
 
   return (
     <div className="hero-section">
+      <div className="hero-overlay">
+        <div className="hero-header">
+          <img
+            src="/images/logo.webp"
+            alt="Logo"
+            className="hero-logo"
+          />
+          <h1 className="hero-title">Steve & Sons Electric</h1>
+          <a href="tel:3036596261" className="hero-call-button">
+            Call Now
+          </a>
+        </div>
+        <p className="hero-subtext">Expert Electrical Services for your home and business</p>
+      </div>
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="slide">
             <img src={slide.image} alt={slide.text} className="slide-image" />
-            <div className="hero-overlay">
-              <h2>{slide.text}</h2>
-              <a href={slide.buttonLink} className="hero-button">{slide.buttonText}</a>
-            </div>
           </div>
         ))}
       </Slider>
