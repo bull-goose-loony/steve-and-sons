@@ -1,7 +1,7 @@
 // src/components/NavBar.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import MobileMenu from './MobileMenu';
+import MobileMenu from '../Hero/MobileMenu';
 import './Navbar.css';
 
 const NavBar: React.FC = () => {
