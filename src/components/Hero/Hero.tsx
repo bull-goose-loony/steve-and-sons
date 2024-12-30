@@ -1,6 +1,7 @@
 // Hero.tsx
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-scroll';
 import './Hero.css'
 
 interface Slide {
@@ -47,15 +48,25 @@ const Hero: React.FC = () => {
       <div className="hero-overlay">
         <div className="hero-header">
           <img
-            src="/images/logo.webp"
+            src="/images/logo.png"
             alt="Logo"
             className="hero-logo"
           />
-          <h1 className="hero-title">Steve & Sons Electric</h1>
-          <a href="tel:3036596261" className="hero-call-button">
-            Call Now
-          </a>
+          <div className = "hero-nav">
+            <ul className="navbar-links">
+              <li><Link to="about" spy={true} smooth={true} duration={300} offset={-100} onClick={() => console.log('About clicked')}>About</Link></li>
+              <li><Link to="services" spy={true} smooth={true} duration={300} offset={-100} onClick={() => console.log('About clicked')}>Services</Link></li>
+              <li><Link to="contact" spy={true} smooth={true} duration={300} onClick={() => console.log('About clicked')}>Contact</Link></li>
+              <li>
+                <a href="tel:3036596261" className="hero-call-button">
+                  Call Now
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <h1 className="hero-title">Steve & Sons Electric</h1>
         <p className="hero-subtext">Expert Electrical Services for your home and business</p>
       </div>
       <Slider {...settings}>
