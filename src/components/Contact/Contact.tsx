@@ -49,58 +49,65 @@ const Contact: React.FC = () => {
   // service_5sd2zvu
   return (
     <div className="contact-section">
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="contact-form-row">
-          <div className="form-group">
-            <label htmlFor="name">Your name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your name"
-              required
-            />
+      <div className="contact-form-container">
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="contact-form-row">
+            <div className="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Your phone number"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your email"
+                required
+              />
+            </div>
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Your phone number</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              value={formData.phone}
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
               onChange={handleChange}
-              placeholder="Your phone number"
+              placeholder="Your message"
               required
-            />
+            ></textarea>
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Your email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Your email"
-              required
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Your message</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Your message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" className="submit-button">SUBMIT</button>
-      </form>
+          <button type="submit" className="submit-button">SUBMIT</button>
+        </form>
+      </div>
+
+      <div className="contact-info-container">
+        <h2>Contact us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+        <ul>
+          <li>303-659-6261</li>
+          <li> someEmail@email.com</li>
+        </ul>
+      </div>
       {isSubmitted && <p className="success-message">Your message has been sent successfully!</p>}
       {errorMessage && <p className="error-message">{errorMessage}</p>}
     </div>

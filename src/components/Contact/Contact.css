@@ -15,16 +15,35 @@ body {
   margin-bottom: 20px;
 }
 
+.contact-form-container,
+.contact-info-container {
+  padding: 20px;
+}
+
+.contact-form-container {
+  flex: 1;
+}
+
+.contact-info-container {
+  flex: 0.7;
+}
+
+.contact-info-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info-container ul {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
 .form-group {
   flex: 1;
   min-width: 200px;
   display: flex;
   flex-direction: column;
-}
-
-.form-group label {
-  margin-bottom: 5px;
-  color: #333;
 }
 
 .form-group input,

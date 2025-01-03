@@ -77,13 +77,8 @@ const HomePage: React.FC = () => {
 
   return (
     <div className = "main-content">
-     {/* <Hero /> */}
     <Element name="about" className="section about-section">
-    <div className='about-section'>
-      <div className = "about-container">
         <About />
-      </div>
-      </div>
      </Element>
      <Element name="services" className="section services-section">
       <h2>Our Services</h2>
@@ -100,8 +95,6 @@ const HomePage: React.FC = () => {
       </div>
      </Element>
      <Element name="contact" className="section contact-section">
-      <h2>Get in touch</h2>
-      <p>Let's talk about your project</p>
         <Contact />
      </Element>
 
