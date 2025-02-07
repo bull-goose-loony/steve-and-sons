@@ -23,14 +23,13 @@ body {
 }
 
 .section {
-  /* margin-top: 20px;
-  margin-bottom: 10px; */
+
 }
 
 .section h2 {
   font-size: 2.5rem;
   margin-top: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
   display: inline-block;
 }
@@ -69,6 +68,13 @@ body {
 .services-section {
   text-align: center;
   padding-bottom: 20px;
+}
+
+.services-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
 }
 
 .contact-section {

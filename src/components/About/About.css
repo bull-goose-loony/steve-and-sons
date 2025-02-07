@@ -25,7 +25,7 @@
 }
 
 .content-container {
-  max-width: 25%;
+  max-width: 50%;
 }
 
 .content-container {
@@ -45,6 +45,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 2%;
   background-position: right center;
   object-position: 80% 70%;
   overflow: hidden;
@@ -59,14 +60,23 @@
   text-align: center;
 }
 
+
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 881px) {
    .about-image {
     width: 100%;
     height: auto;
     object-fit: cover;
     background-position: right center;
+  }
+
+  .content-container p {
+      font-size: 0.7rem;
+      font-weight: lighter;
+      color: white;
+      z-index: 1;
   }
 /* .content-container {
   max-width: 25%;

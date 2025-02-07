@@ -14,7 +14,6 @@ const HomePage: React.FC = () => {
     {
       id: 1,
       image: 'images/card1.jpg',
-      overlay_text: 'Residential Services',
       title: 'Residential',
       description: (
         <ul>
@@ -31,7 +30,6 @@ const HomePage: React.FC = () => {
     {
       id: 2,
       image: 'images/card1.jpg',
-      overlay_text: 'Commercial Services',
       title: 'Commercial',
       description: (
         <ul>
@@ -48,7 +46,6 @@ const HomePage: React.FC = () => {
     {
       id: 3,
       image: 'images/card1.jpg',
-      overlay_text: 'Industrial Services',
       title: 'Industrial',
       description: (
         <ul>
@@ -62,7 +59,6 @@ const HomePage: React.FC = () => {
     {
       id: 4,
       image: 'images/card1.jpg',
-      overlay_text: 'Specialty Services',
       title: 'Specialty',
       description: (
         <ul>
@@ -87,7 +83,6 @@ const HomePage: React.FC = () => {
           <Card
             key={card.id}
             image={card.image}
-            overlay_text={card.overlay_text}
             title={card.title}
             description={card.description}
           />
