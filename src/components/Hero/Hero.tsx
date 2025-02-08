@@ -62,8 +62,8 @@ const Hero: React.FC = () => {
           />
           <div>
             <ul className="navbar-links">
-              <li><Link to="about" spy={true} smooth={true} duration={300} offset={-100} onClick={() => console.log('About clicked')}>About</Link></li>
-              <li><Link to="services" spy={true} smooth={true} duration={300} offset={-100} onClick={() => console.log('About clicked')}>Services</Link></li>
+              <li><Link to="about" spy={true} smooth={true} duration={300} offset={-25} onClick={() => console.log('About clicked')}>About</Link></li>
+              <li><Link to="services" spy={true} smooth={true} duration={300} offset={10} onClick={() => console.log('About clicked')}>Services</Link></li>
               <li><Link to="contact" spy={true} smooth={true} duration={300} onClick={() => console.log('About clicked')}>Contact</Link></li>
               <li>
                 <a href="tel:3036596261" className="hero-call-button">

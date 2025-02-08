@@ -99,12 +99,14 @@ const Contact: React.FC = () => {
           <button type="submit" className="submit-button">SUBMIT</button>
         </form>
       </div>
-
+      <div className="vertical-rule"></div>
       <div className="contact-info-container">
         <h2>Contact us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+        <p>Feel free to reach out with any questions or inquiries. Our team is here to assist you and provide the support you need.</p>
         <ul>
-          <li>303-659-6261</li>
+          <li>
+            <a href="303-659-6261">303-659-6261</a>
+            </li>
           <li> someEmail@email.com</li>
         </ul>
       </div>
