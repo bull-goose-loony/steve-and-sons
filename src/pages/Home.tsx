@@ -13,59 +13,68 @@ const HomePage: React.FC = () => {
   const cardsData = [
     {
       id: 1,
-      image: 'images/card1.webp',
-      overlay_text: '',
-      title: 'Panel Work',
-      description: 'TODO: this is an example, Let me know what you want the "cards" below to advertise.'
+      image: 'images/card1.jpg',
+      title: 'Residential',
+      description: (
+        <ul>
+          <li>Wiring & rewiring</li>
+          <li>Troubleshooting & repairs</li>
+          <li>Panel upgrades</li>
+          <li>Lighting installation</li>
+          <li>EV charger installation</li>
+          <li>Surge protection</li>
+          <li>Home automation</li>
+        </ul>
+      ),
     },
     {
       id: 2,
-      image: 'images/card2.webp',
-      overlay_text: '',
-      title: 'Card Title 2',
-      description: 'Description for card 2...'
+      image: 'images/card1.jpg',
+      title: 'Commercial',
+      description: (
+        <ul>
+          <li>Tenant build-outs</li>
+          <li>Lighting design & installation</li>
+          <li>Power distribution</li>
+          <li>Equipment wiring</li>
+          <li>Emergency repairs</li>
+          <li>Security systems</li>
+          <li>Network cabling</li>
+        </ul>
+      ),
     },
     {
       id: 3,
-      image: 'images/card2.webp',
-      overlay_text: '',
-      title: 'Card Title 3',
-      description: 'Description for card 3...'
+      image: 'images/card1.jpg',
+      title: 'Industrial',
+      description: (
+        <ul>
+          <li>High-voltage work</li>
+          <li>Motor controls</li>
+          <li>PLC installations</li>
+          <li>Preventive maintenance</li>
+        </ul>
+      ),
     },
     {
       id: 4,
-      image: 'images/card2.webp',
-      overlay_text: '',
-      title: 'Card Title 4',
-      description: 'Description for card 4...'
+      image: 'images/card1.jpg',
+      title: 'Specialty',
+      description: (
+        <ul>
+          <li>Pool & spa wiring</li>
+          <li>Hot tub installations</li>
+          <li>Renewable energy systems</li>
+          <li>Custom projects</li>
+        </ul>
+      ),
     },
-    {
-      id: 5,
-      image: 'images/card2.webp',
-      overlay_text: '',
-      title: 'Card Title 5',
-      description: 'Description for card 5...'
-    },
-    {
-      id: 6,
-      image: 'images/card2.webp',
-      overlay_text: '',
-      title: 'Card Title 6',
-      description: 'Description for card 6...'
-    },
-    // Add more cards as needed...
-  ];
+  ];   // Add more cards as needed...
 
   return (
     <div className = "main-content">
-     <Hero />
     <Element name="about" className="section about-section">
-    <div className='about-section'>
-      <h2>About Us</h2>
-      <div className = "about-container">
         <About />
-      </div>
-      </div>
      </Element>
      <Element name="services" className="section services-section">
       <h2>Our Services</h2>
@@ -74,7 +83,6 @@ const HomePage: React.FC = () => {
           <Card
             key={card.id}
             image={card.image}
-            overlay_text={card.overlay_text}
             title={card.title}
             description={card.description}
           />
@@ -82,8 +90,6 @@ const HomePage: React.FC = () => {
       </div>
      </Element>
      <Element name="contact" className="section contact-section">
-      <h2>Get in touch</h2>
-      <p>Let's talk about your project</p>
         <Contact />
      </Element>
 

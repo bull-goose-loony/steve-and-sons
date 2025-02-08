@@ -1,19 +1,19 @@
 // App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer'
 import Home from './pages/Home';
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="App">
-        <NavBar />
+        <Hero/>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );

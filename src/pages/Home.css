@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background-image: url("/public/images/webb.png")
+  background-color: rgba(0, 0, 0, 0.7); /* White with 90% opacity */
 }
 
 .main-content {
@@ -23,28 +23,16 @@ body {
 }
 
 .section {
-  background-color: rgba(255, 255, 255, 0.8); /* White with 90% opacity */
-  margin-top: 20px;
-  margin-bottom: 10px;
+
 }
+
 
 .section h2 {
   font-size: 2.5rem;
   margin-top: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
   display: inline-block;
-}
-
-.section h2::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  width: 300px;
-  height: 5px;
-  background-color: #ffff00;
-  transform: translateX(-50%);
 }
 
 .cards-container {
@@ -55,38 +43,27 @@ body {
   padding: 10px;
 }
 
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
-  overflow: hidden;
-}
-
 .about-section {
   position: relative;
   width: 100%;
   height: auto;
-  padding-bottom: 20px;
   overflow: hidden;
   text-align: center;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the cards in the container */
-  padding: 10px;
-}
-
 .services-section {
-  text-align: center;    
-  padding-bottom: 20px;
+  text-align: center;
 }
 
-/* src/components/Contact.css */
+.services-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
 .contact-section {
-  /* margin-top: 20px; */
+  display: flex;
   padding: 30px 30px 10px 30px;
   text-align: center;
 }
@@ -94,20 +71,21 @@ body {
 .contact-section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #FFF;
 }
 
 .contact-section p {
   font-size: 1rem;
-  color: #666;
+  color: #FFF;
 }
 
 /* Tablets */
 @media (max-width: 768px) {
-  .hero-section {
+  /* .hero-section {
     overflow: hidden;
     padding-top: 0px;
     height: 62vh;
-  }
+  } */
 
   .about-section {
     position: relative;
@@ -117,11 +95,11 @@ body {
 
 /* Phone  */
 @Media (max-width: 600) {
-  .hero-section {
+  /* .hero-section {
     overflow: hidden;
     padding-top: 0px;
     height: 62vh;
-  }
+  } */
 
   .about-section {
     position: relative;

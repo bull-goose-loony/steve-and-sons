@@ -15,16 +15,47 @@ body {
   margin-bottom: 20px;
 }
 
+.contact-form-container,
+.contact-info-container {
+  padding: 20px;
+}
+
+.contact-form-container {
+  flex: 1;
+}
+
+.contact-info-container {
+  flex: 0.7;
+}
+
+.contact-info-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info-container ul {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-info-container li {
+  font-size: 1rem;
+  color: #CCC;
+}
+
+.vertical-rule {
+  width: 1px;            /* Set the thickness of the line */
+  height: 70%;          /* Set the height of the vertical line */
+  background-color: #FFF; /* Line color */
+  margin: 20px 0;         /* Optional: margin around the vertical rule */
+}
+
 .form-group {
   flex: 1;
   min-width: 200px;
   display: flex;
   flex-direction: column;
-}
-
-.form-group label {
-  margin-bottom: 5px;
-  color: #333;
 }
 
 .form-group input,

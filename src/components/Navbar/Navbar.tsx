@@ -1,7 +1,7 @@
 // src/components/NavBar.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import MobileMenu from './MobileMenu';
+import MobileMenu from '../Hero/MobileMenu';
 import './Navbar.css';
 
 const NavBar: React.FC = () => {
@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
         </ul>
       </div>
       <div className="navbar-right">
-        <a href="tel:1234567890" className="phone-btn">Call Us</a>
+        <a href="tel:1234567890" className="hero-call-button">Call Us</a>
         <button className="hamburger-btn" onClick={toggleMenu}>☰</button>
       </div>
       {isMenuOpen && <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />}
