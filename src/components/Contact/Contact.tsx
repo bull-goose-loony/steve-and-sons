@@ -105,9 +105,11 @@ const Contact: React.FC = () => {
         <p>Feel free to reach out with any questions or inquiries. Our team is here to assist you and provide the support you need.</p>
         <ul>
           <li>
-            <a href="303-659-6261">303-659-6261</a>
+            <a href="tel:3036596261">303-659-6261</a>
             </li>
-          <li> someEmail@email.com</li>
+          <li> 
+            <a href="mailto:someEmail@email.com">someEmail@gmail.com</a>
+            </li>
         </ul>
       </div>
       {isSubmitted && <p className="success-message">Your message has been sent successfully!</p>}

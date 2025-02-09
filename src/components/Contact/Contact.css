@@ -22,6 +22,7 @@ body {
 
 .contact-form-container {
   flex: 1;
+  max-width: 40vw;
 }
 
 .contact-info-container {
@@ -44,11 +45,16 @@ body {
   color: #CCC;
 }
 
+.contact-info-container a {
+  color: #ddd; /* Light gray color */
+  text-decoration: none; /* Remove underline */
+}
+
 .vertical-rule {
   width: 1px;            /* Set the thickness of the line */
   height: 70%;          /* Set the height of the vertical line */
   background-color: #FFF; /* Line color */
-  margin: 20px 0;         /* Optional: margin around the vertical rule */
+  margin: 20px 80px;
 }
 
 .form-group {

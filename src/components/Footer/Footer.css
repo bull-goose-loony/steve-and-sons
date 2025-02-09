@@ -1,14 +1,14 @@
 /* Footer.css */
 .footer {
-  background-color: #161a1d; /* Match your navbar color */
+  background-color: #000000; /* Match your navbar color */
   color: #fefdf1; /* Match your text color */
   text-align: center; /* Center text horizontally */
   position: bottom; /* Make the footer sticky */
   bottom: 0; /* Stick to the bottom */
   width: 100%; /* Occupy full width */
-  height: 50px;
+  /* height: 100px; */
 }
 
 .footer p {
-	padding-top: 10px	
+  overflow: hidden;;
 }

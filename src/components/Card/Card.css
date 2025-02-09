@@ -1,16 +1,16 @@
 /* src/components/Card.css */
 .card {
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  max-width: 49%;
-  margin: 0 auto;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    max-width: 600px; /* Adjust width */
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 .card-image-container {
@@ -18,10 +18,11 @@
 }
 
 .card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 2px solid #f4f4f4;
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-image-container:hover .card-overlay {
@@ -37,21 +38,23 @@
 }
 
 .card h3 {
-  margin: 0 0 15px 0;
-  font-size: 1.6rem;
-  color: #333;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #000;
+    font-weight: bold;
 }
 
 .card ul {
-  padding-left: 20px;
-  margin: 0;
-  color: #555;
-  line-height: 1.6;
-  font-size: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .card ul li {
-  margin-bottom: 8px;
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #444;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .cards-container {

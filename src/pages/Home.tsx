@@ -17,13 +17,14 @@ const HomePage: React.FC = () => {
       title: 'Residential',
       description: (
         <ul>
-          <li>Wiring & rewiring</li>
-          <li>Troubleshooting & repairs</li>
-          <li>Panel upgrades</li>
-          <li>Lighting installation</li>
-          <li>EV charger installation</li>
-          <li>Surge protection</li>
-          <li>Home automation</li>
+        <li><strong>Wiring & rewiring:</strong> Safe and efficient electrical installations for new and old homes.</li>
+        <li><strong>Troubleshooting & repairs:</strong> Quick diagnostics and fixes for electrical issues.</li>
+        <li><strong>Panel upgrades:</strong> Modernize your home's electrical panel for increased safety and efficiency.</li>
+        <li><strong>Lighting installation:</strong> Enhance your home’s ambiance with expertly installed indoor and outdoor lighting.</li>
+        <li><strong>EV charger installation:</strong> Professional setup for at-home electric vehicle charging stations.</li>
+        <li><strong>Surge protection:</strong> Protect your appliances and electronics from power surges.</li>
+        <li><strong>Home automation:</strong> Upgrade your home with smart technology for lighting, security, and energy efficiency.</li>
+        <li><strong>General Dealer:</strong> Providing top-quality electrical equipment and supplies for residential needs.</li>
         </ul>
       ),
     },
@@ -33,39 +34,13 @@ const HomePage: React.FC = () => {
       title: 'Commercial',
       description: (
         <ul>
-          <li>Tenant build-outs</li>
-          <li>Lighting design & installation</li>
-          <li>Power distribution</li>
-          <li>Equipment wiring</li>
-          <li>Emergency repairs</li>
-          <li>Security systems</li>
-          <li>Network cabling</li>
-        </ul>
-      ),
-    },
-    {
-      id: 3,
-      image: 'images/card1.jpg',
-      title: 'Industrial',
-      description: (
-        <ul>
-          <li>High-voltage work</li>
-          <li>Motor controls</li>
-          <li>PLC installations</li>
-          <li>Preventive maintenance</li>
-        </ul>
-      ),
-    },
-    {
-      id: 4,
-      image: 'images/card1.jpg',
-      title: 'Specialty',
-      description: (
-        <ul>
-          <li>Pool & spa wiring</li>
-          <li>Hot tub installations</li>
-          <li>Renewable energy systems</li>
-          <li>Custom projects</li>
+        <li><strong>Tenant build-outs:</strong> Complete electrical setup for new or renovated commercial spaces.</li>
+        <li><strong>Lighting design & installation:</strong> Custom lighting solutions to enhance functionality and aesthetics.</li>
+        <li><strong>Power distribution:</strong> Reliable power management for offices, retail stores, and warehouses.</li>
+        <li><strong>Equipment wiring:</strong> Safe and efficient wiring for commercial machinery and equipment.</li>
+        <li><strong>Emergency repairs:</strong> Rapid response for unexpected electrical failures to minimize downtime.</li>
+        <li><strong>Security systems:</strong> Installation of surveillance, alarms, and access control systems.</li>
+        <li><strong>Network cabling:</strong> Professional setup of structured cabling for internet and communication networks.</li>
         </ul>
       ),
     },
@@ -77,7 +52,6 @@ const HomePage: React.FC = () => {
         <About />
      </Element>
      <Element name="services" className="section services-section">
-      <h2>Our Services</h2>
       <div className="cards-container">
         {cardsData.map(card => (
           <Card
