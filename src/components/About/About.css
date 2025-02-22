@@ -19,27 +19,6 @@
   background-color: white; /* Color of the underline */ 
 }
 
-.read-more-btn {
-  display: inline-block;
-  padding: 12px 16px;         /* Larger touch area for thumbs */
-  font-size: 1rem;            /* Clear, readable text */
-  font-weight: 600;           /* Slightly bold */
-  color: white;               /* White text */
-  background: transparent;    /* No background */
-  border: none;               /* No border */
-  border-radius: 8px;         /* Rounded corners for better aesthetics */
-  cursor: pointer;            /* Pointer cursor on hover */
-  text-align: center;
-  width: 100%;                /* Easy thumb access - stretches to full width on small screens */
-  transition: all 0.3s ease;  /* Smooth transitions */
-  touch-action: manipulation; /* Improves mobile touch response */
-}
-
-/* Active state for press feedback */
-.read-more-btn:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 .wrapper {
   display: flex;
   padding: 0 10px 0 10px;
@@ -79,15 +58,7 @@
   .content-container {
     color: white;
     padding: 0 5vw 0 5vw;
-    text-align: center;
-  }
-
-  .full-text {
-    display: none;
-  }
-
-  .read-more-btn {
-    display: none;
+    text-align: left;
   }
 }
 
