@@ -1,51 +1,34 @@
 /* src/components/Card.css */
 .card {
-    background-color: #FAFAFA;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    max-width: 600px; /* Adjust width */
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-image-container {
   position: relative;
-}
-
-.card-image {
-    width: 100%;
-    height: 200px; /* Set a fixed height */
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card-image-container:hover .card-overlay {
-  opacity: 1;
+  flex: 1 1 calc(50% - 30px);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Light border to define shape */
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  background-color: transparent; /* Completely see-through */
+  z-index: 1; /* Ensure cards appear above the overlay */
+  backdrop-filter: blur(30px); /* Optional: subtle blur effect */
+  color: white; /* Make text readable against dark background */
 }
 
 .card-content {
-  /* padding: 20px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  height: 100%;
 }
 
-.card h3 {
+.card h2 {
     font-size: 1.5rem;
     margin: 15px 0;
-    color: #000;
+    color: white;;
     font-weight: bold;
 }
 
 .card ul {
     list-style: none;
+    color: white;
     padding: 0;
     margin: 0;
 }
@@ -53,43 +36,31 @@
 .card ul li {
     padding: 8px 0;
     font-size: 1rem;
-    color: #444;
-    border-bottom: 1px solid #DDDDDD;
+    color: white;
+    /* border-bottom: 0.5px solid #DDDDDD; */
+    border-bottom: 0.5px solid rgba(221, 221, 221, 0.2);
+    text-align: left;
 }
 
-.cards-container {
-  display: grid;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+.card ul li strong {
+  font-size: 1.2rem;  /* Increase font size */
+  font-weight: 800;   /* Extra-bold weight */
+  color: white;       /* Keep text white */
 }
+
+.card ul li:last-child {
+  border-bottom: none;
+}
+
 
 @media (min-width: 1024px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .card {
-    width: 50%;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .card {
-    width: 45%;
-  }
 }
 
 @media (max-width: 767px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
 
-  .card {
-    width: 90%;
-  }
 }
