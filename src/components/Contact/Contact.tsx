@@ -100,6 +100,7 @@ const Contact: React.FC = () => {
         </form>
       </div>
       <div className="vertical-rule"></div>
+      <div className="horizontal-rule"></div>
       <div className="contact-info-container">
         <h2>Contact us</h2>
         <p>Feel free to reach out with any questions or inquiries. Our team is here to assist you and provide the support you need.</p>

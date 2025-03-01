@@ -108,3 +108,38 @@ body {
   color: red;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .vertical-rule {
+    display: none;
+  }
+
+  .contact-info-container {
+    order: -2;
+    min-width: 70vw;
+    max-width: 70vw;
+    overflow: none;
+    padding: 0 0 0 0;
+  }
+
+  .contact-form-container {
+    order: 1;
+    max-width: 70vw;
+    overflow: none;
+    padding: 0 0 0 0;
+  }
+
+  .horizontal-rule {
+    display: flex;
+    order: -1;
+    min-width: 40vw;
+    max-width: 40vw;
+    height: 1px;          /* Set the height of the vertical line */
+    background-color: #FFF; /* Line color */
+    margin: 20px 80px;
+    align-items: center;
+    overflow: none;
+  }
+
+
+}

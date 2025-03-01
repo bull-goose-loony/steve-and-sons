@@ -55,8 +55,8 @@
 .read-more-btn {
   display: inline;
   padding: 12px 16px;         /* Larger touch area for thumbs */
-  font-size: 1rem;            /* Clear, readable text */
-  font-weight: 600;           /* Slightly bold */
+  font-size: 1.0rem;            /* Clear, readable text */
+  font-weight: 100;           /* Slightly bold */
   color: white;               /* White text */
   background: transparent;    /* No background */
   border: none;               /* No border */
@@ -77,10 +77,25 @@
   .read-more-btn {
     display: none;
   }
+
+  .full-text {
+    display: inline;
+  }
+}
+
+@media (max-width: 900) {
+  .card ul li strong {
+    font-size: 0.9rem;  /* Increase font size */
+    font-weight: 700;   /* Extra-bold weight */
+    color: white;       /* Keep text white */
+  }
+
 }
 
 @media (max-width: 768px) {
   .full-text {
     display: none;
+
   }
+
 }

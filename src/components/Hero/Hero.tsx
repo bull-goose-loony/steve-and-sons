@@ -66,16 +66,16 @@ const Hero: React.FC = () => {
               <li><Link to="services" spy={true} smooth={true} duration={300} offset={10} onClick={() => console.log('About clicked')}>Services</Link></li>
               <li><Link to="contact" spy={true} smooth={true} duration={300} onClick={() => console.log('About clicked')}>Contact</Link></li>
               <li>
-                <a href="tel:3036596261" className="hero-call-button">
-                  Call Now
-                </a>
               </li>
             </ul>
           </div>
         </div>
         <h1 className="hero-title">Steve & Sons Electric</h1>
-        <button className="hamburger-btn" onClick={toggleMenu}>☰</button>
+
         <p contentEditable = "false" className="hero-subtext">Expert Electrical Services for your home and business</p>
+          <a href="tel:3036596261" className="hero-call-button">
+            Call Now
+          </a>
       </div>
       <Slider {...settings}>
         {slides.map((slide, index) => (
