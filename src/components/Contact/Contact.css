@@ -132,13 +132,11 @@ body {
   .horizontal-rule {
     display: flex;
     order: -1;
-    min-width: 40vw;
-    max-width: 40vw;
+    min-width: 30vw;
+    max-width: 30vw;
     height: 1px;          /* Set the height of the vertical line */
     background-color: #FFF; /* Line color */
     margin: 20px 80px;
-    align-items: center;
-    overflow: none;
   }
 
 
