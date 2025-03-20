@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
         <h1 className="hero-title">Steve & Sons Electric</h1>
 
         <p contentEditable = "false" className="hero-subtext">Expert Electrical Services for your home and business</p>
-          <a href="tel:3036596261" className="hero-call-button">
+          <a href="tel:3038709985" className="hero-call-button">
             Call Now
           </a>
       </div>

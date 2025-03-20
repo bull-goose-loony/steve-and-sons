@@ -106,10 +106,10 @@ const Contact: React.FC = () => {
         <p>Feel free to reach out with any questions or inquiries. Our team is here to assist you and provide the support you need.</p>
         <ul>
           <li>
-            <a href="tel:3036596261">303-659-6261</a>
+            <a href="tel:3038709985">303-870-9985</a>
             </li>
           <li> 
-            <a href="mailto:someEmail@email.com">someEmail@gmail.com</a>
+            <a href="mailto:steveandsonselectricllc@gmail.com">steveandsonselectricllc@gmail.com</a>
             </li>
         </ul>
       </div>
